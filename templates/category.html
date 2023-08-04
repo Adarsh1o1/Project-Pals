@@ -1,0 +1,11 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+<body>
+  <link rel="stylesheet" href="{% static '/css/category.css' %}">
+  {% for name in names %}
+    <h1>{{ name }}</h1>
+    <br>
+</body>
+  
+  {% endfor %}{% endblock %}

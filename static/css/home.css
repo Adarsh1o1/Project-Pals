@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    /* background-attachment: fixed; */
+    background-color: #25274d;
+    /* overflow-y: hidden; /* Hide vertical scrollbar */
+ /* overflow-x: hidden; Hide horizontal scrollbar */
+
+}
+
+/* button{
+    background: transparent;
+    border: none;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    cursor:pointer;
+    
+} */
+
+.container{
+    display: flex;
+    background-color: #25274d;
+    height: 100vh;
+    width: 18vw;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    overflow: hidden;
+
+    /* visibility: hidden; */
+}
+
+#logo a img{
+    width: 15vw;
+    box-sizing: border-box;
+
+}
+#notifications a img{
+    /* height: 200px; */
+    width: 12vw;
+}
+#home a img{
+
+    width: 12vw;
+}
+#profile a img{
+    width: 12vw;
+}
+
+#create a img{
+    width: 12vw;
+}
+
+.container li{
+    list-style: none;
+    margin-bottom: 40px;
+
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    color: rgba(245, 245, 245, 0.575);
+    position: relative;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    height: 100vh;
+    width: 61vw;
+    overflow: scroll;
+    /* background-color: #25274d; */
+    border: 2px solid #464866;
+}
+.content::-webkit-scrollbar {
+    display: none;
+  }
+.list{
+    position: relative;
+    padding-left: 10px;
+}
+
+.log{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+
+    
+}
+
+.log button {
+    height: 2rem;
+    width: 7rem;
+    border: none;
+    margin-left: 1.45rem;
+    background-color: #AAABB8;
+    /* position: fixed; */
+    /* background: transparent; */
+    text-align: center;
+    /* margin-left: 0px; */
+    border-radius: 20px;
+    /* box-sizing: border-box; */
+    cursor: pointer;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.log button a{
+    width: fit-content;
+    font-size: 1.2224rem;
+    /* font-weight: ; */
+    color: #25274d;
+    text-decoration: none;
+
+}
+
+#po{
+    text-align: center;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin: 0px,10px; */
+    /* position: relative; */
+    /* top: 10px; */
+    /* box-sizing: border-box; */
+    /* display: flex; */
+    /* margin: 200px,0px; */
+    /* justify-content: center; */
+    /* border: 2px solid red; */
+    /* width: 50rem; */
+}
+/* .po1{ */
+    /* text-align: center; */
+    /* list-style: none; */
+    /* background-color: #AAABB8; */
+    /* margin: 0px,10px; */
+    /* position: relative; */
+    /* top: 10px; */
+    /* box-sizing: border-box; */
+    
+    /* display: flex; */
+    /* margin: 200px,0px; */
+    /* justify-content: center; */
+    /* border: 2px solid red; */
+    /* width: 50rem; */
+/* } */
+#po2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin: 0px,10px; */
+    /* position: relative; */
+    /* top: 10px; */
+    /* box-sizing: border-box; */
+    /* display: flex; */
+    /* margin: 200px,0px; */
+    /* justify-content: center; */
+    /* border: 2px solid red; */
+    /* width: 50rem; */
+}
+#po3{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin: 0px,10px; */
+    /* position: relative; */
+    /* top: 10px; */
+    /* box-sizing: border-box; */
+    /* display: flex; */
+    /* margin: 200px,0px; */
+    /* justify-content: center; */
+    /* border: 2px solid red; */
+    /* width: 50rem; */
+}
+#po4{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* margin: 0px,10px; */
+    /* position: relative; */
+    /* top: 10px; */
+    /* box-sizing: border-box; */
+    /* display: flex; */
+    /* margin: 200px,0px; */
+    /* justify-content: center; */
+    /* border: 2px solid red; */
+    /* width: 50rem; */
+}
+.categor{
+    /* display: flex; */
+    height: 100vh;
+    /* position: absolute; */
+    width: 21vw;
+    color: beige;
+    list-style: none;
+    overflow: hidden;
+    background-color: #25274d;
+}
+.categor li{
+    margin-top: 20px;
+}
+#arduino a img{
+    width: 18vw;
+}
+#iot a img{
+    width: 18vw;
+}
+#embedded a img{
+    width: 18vw;
+}
+#electronics a img{
+    width: 18vw;
+}
+#robotics a img{
+    width: 18vw;
+}
+#category img{
+    width: 20vw;
+}

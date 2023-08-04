@@ -1,0 +1,125 @@
+{% load static %}
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+</head>
+<body>
+    <span class="container">
+        <div class="contain">
+
+
+        <div class="list">
+            <li id="logo">
+                <a href="{% url 'home' %}">
+                <img src="{% static '/media/logo 4.png'%}" alt="logo">
+                </a>
+            </li>
+
+            <li id="home">
+                <a href="{% url 'home'%}">
+                    <img src="{% static '/media/home.png'%}" alt="home">
+                </a>
+            </li>
+            <li id="notifications">
+                <a href="#">
+                    <img src="{% static '/media/notifications.png'%}" alt="notifications">
+                </a>
+            </li>
+            <!-- <li id="category">
+                <a href="{% url 'category'%}">
+                    <img src="{% static '/media/categories.png'%}" alt="category">
+                </a>
+            </li> -->
+            <li id="profile">
+                <a href="#">
+                    <img src="{% static '/media/profile.png'%}"  alt="profile">
+                </a>
+            </li>
+            <li>
+                <li id="create">
+                    <a href="{% url 'upload' %}">
+                        <img src="{% static '/media/post.png'%}"  alt="profile">
+                    </a>
+                </li>
+            </li>
+            <li>
+                <!-- <button><a href="{% url 'home' %}">to allposts</a></button> -->
+                
+            </li>
+        </div>
+        <div class="log">
+            <!-- <button>Log Out</button> -->
+            {% if user.is_authenticated %}
+            <button id="btn"><a href="{% url 'logout' %}"><b>logout</b></a></button>
+            {% else %}
+            <button id="btn"><a href="{% url 'loginpage' %}"><b>Log in</b></a></button>
+            {% endif %}
+        
+        </div>
+    </div>
+</span>
+<div class="content">
+    <div id="po">
+        {% block posts %} {% endblock posts %}
+    </div>
+    <div class="po1">
+        {% block uploads %} {% endblock uploads %}
+    </div>
+    <div class="po2">
+        {% block embedded %} {% endblock embedded %}
+    </div>
+    <div class="po3">
+    {% block electronics %} {% endblock electronics %}
+    </div>
+    <div class="po4">
+    {% block mail %} {% endblock mail %}
+    </div>
+</div>
+<div class="categor">
+    
+<div id="category">
+
+            <img src="{% static '/media/categories.png'%}"  alt="profile">
+</div>
+<ul>
+
+    <li id="arduino">
+        <a href="#">
+            <img src="{% static '/media/arduino.png'%}"  alt="profile">
+        </a>
+    </li>
+    <li id="electronics">
+        <a href="{% url 'electronics' %}">
+            <img src="{% static '/media/electronics.png'%}"  alt="profile">
+        </a>
+    </li>
+    <li id="embedded">
+        <a href="{%url 'embedded'%}">
+            <img src="{% static '/media/embedded.png'%}"  alt="profile">
+        </a>
+    </li>
+    <li id="iot">
+        <a href="#">
+            <img src="{% static '/media/iot.png'%}"  alt="profile">
+        </a>
+    </li>
+    <li id="robotics">
+        <a href="#">
+            <img src="{% static '/media/robotics.png'%}"  alt="profile">
+        </a>
+    </li>
+</ul>
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+{% extends 'home.html' %}
+<!-- {% load static %} -->
+{% block posts %}
+  {% for post in posts %}
+  
+    <div class="post"  style="box-shadow: 0 4px 8px 0 #464866, 0 6px 20px 0 #464866; margin-bottom: 50px; border-radius: 20px;">
+      <h1>{{ post.user.username }}</h1>
+      <h1>category: {{ post.category }}</h1>
+      <h1>branch: {{ post.branch }}</h1>
+      <h1>year: {{ post.year }}</h1>
+      <h2>Project: {{ post.project_name }}</h2>
+      <!-- {{ post.image }} /{{MEDIA_ROOT}}/-->
+      <!-- for loading uploaded image -->
+      <img src="{{post.image.url}}" width="700px">
+      <h3>Description: {{ post.description }}</h3>
+      <!-- <a href="#">
+        <img src="{% static '/media/robotics.png'%}"  alt="profile">
+    </a> -->
+      {% comment %} <button>Send Pal Request</button> {% endcomment %}
+      <button><a href="{% url 'mail' pk=post.user.id pk1=post.id %}"><b>contact</b></a></button> 
+      <!-- <p>Posted by {{ post.user.username }}</p> -->
+      <p>Created at {{ post.created_at }}</p>
+      <br>
+
+    </div>
+    
+  {% endfor %}
+{% endblock posts %}

@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+{% block mail %} 
+
+ <h1>mail Page</h1>
+
+ <button type="submit" onclick="show_status()" >Upload Post</button>
+ {% if status %}
+ <script>
+     function show_status(){
+         alert("{{status}}");
+ }     
+ </script>
+{% endif %}
+{% endblock mail %}
